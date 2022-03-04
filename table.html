@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+		<meta charset="utf-8">
+    <link rel=stylesheet href="styles.css">
+		<title>How to link font-families to HTML file</title>
+</head>
+<body>
+  <h1>How to link font-families to HTML file</h1>
+  <table>
+    <thead>
+      <td>Path</td>
+      <td>Method</td>
+      <td>Example Code</td>
+    </thead>
+    <tr>
+      <td class="firstrow">HTML</td>
+      <td class="firstrow">"&ltlink&gt" in the &lthead&gt tag</td>
+      <td class="firstrow">"&ltlink rel="preconnect" href="https://fonts.googleapis.com"
+&ltlink&gt rel="preconnect" href="https://fonts.gstatic.com" crossorigin
+&ltlink&gt href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet"&gt</td>
+    </tr>
+    <tr>
+      <td class="secondrow">HTML</td>
+      <td class="secondrow">Copy the entire font directory into your project</td>
+      <td class="secondrow"> &ltlink rel="stylesheet" href="path/to/FONT-NAME/FONT-NAME.min.css"&gt</td>
+    </tr>
+    <tr>
+      <td class="thirdrow">HTML</td>
+      <td class="thirdrow">Google API's'</td>
+      <td class="thirdrow">&ltlink rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Audiowide|Sofia|Trirong""&gt ( ! multiple fonts ! )</td>
+    </tr>
+    <tr>
+      <td class="forthrow">CSS</td>
+      <td class="forthrow">Using Font-face property</td>
+      <td class="forthrow"> @font-face {
+  font-family: myFirstFont;
+  src: url(sansation_bold.woff);
+  font-weight: bold; } </td>
+    </tr>
+  </table>
+</body>
+</html>
